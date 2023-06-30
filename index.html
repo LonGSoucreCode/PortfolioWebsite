@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Long Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Long Do</a>
+      <div class="menuToggle"></div>
+      <ul class="nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section id="home">
+      <div class="content">
+        <h2>Long Do</h2>
+        <p>
+          I always wanted to be a FrontEnd & BackEnd Developer. I want to find
+          new challenges for myself, help me develop my skills and create a
+          source of income for myself. I look forward to joining the company in
+          a professional and dynamic working environment to perfect, develop
+          skills and improve myself.
+        </p>
+        <a href="#" class="btn">Contact Me</a>
+      </div>
+      <img src="" class="main" alt="" />
+    </section>
+    <section id="services">
+      <div class="secText">
+        <h2>What I Am Great At</h2>
+        <p>
+          Strong knowledge of HTML, CSS, Javascript and Angular, C#, Asp.Net
+          Core, MS SQL server and acquired soft skills through teamwork and
+          internship.
+        </p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="img/design.png" alt="" />
+          <h3>Web Designing</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="img/web-design.png" alt="" />
+          <h3>Frontend Development</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="img/coding.png" alt="" />
+          <h3>Backend Development</h3>
+        </div>
+        <div class="servicesBx">
+          <img src="img/database-storage.png" alt="" />
+          <h3>Database</h3>
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">Hire</a>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="secText">
+        <h2>My Masterpiece Collection</h2>
+        <p>
+          Strong knowledge of HTML, CSS, Javascript and Angular, C#, Asp.Net
+          Core, MS SQL server and acquired soft skills through teamwork and
+          internship.
+        </p>
+      </div>
+      <div class="content">
+        <div class="imgBx">
+          <a href="https://longsoucrecode.github.io/NikeLandingWebsite/">
+            <img src="img/Product1.png" alt="" /> Nike Landing Page</a
+          >
+        </div>
+        <div class="imgBx">
+          <a href="https://longsoucrecode.github.io/TravelWebsite/">
+            <img src="img/Product2.png" alt="" /> Travel Website</a
+          >
+        </div>
+      </div>
+      <div class="center">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="secText">
+        <h2>Ways To Contact Me</h2>
+        <p>
+            If you want to cooperate with me, please contact me through the ways below. Thank you.
+        </p>
+      </div>
+      <div class="content">
+        <a href="#">
+          <ion-icon name="mail-outline"></ion-icon>
+          dolong15042002@gmail.com
+        </a>
+        <a href="#">
+          <ion-icon name="call-outline"></ion-icon>
+          +84 971294277
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100009888337969">
+          <ion-icon name="logo-facebook"></ion-icon>
+          Facebook
+        </a>
+        <a href="https://github.com/LonGSoucreCode">
+          <ion-icon name="logo-github"></ion-icon>
+          Github
+        </a>
+      </div>
+      <div class="center">
+        <p class="copyrights">
+          Copy © 2023 <a href="#">Online Tutorials</a> and edited by Long Do
+        </p>
+      </div>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let lists = document.querySelectorAll(".nav li");
+      function active() {
+        lists.forEach((i) => i.classList.remove("active"));
+        this.classList.add("active");
+      }
+      lists.forEach((i) => i.addEventListener("click", active));
+
+      let menuToggle = document.querySelector(".menuToggle");
+      let header = document.querySelector("header");
+      menuToggle.onclick = function () {
+        header.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
